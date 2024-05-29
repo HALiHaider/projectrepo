@@ -1,0 +1,188 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="Logo.png" alt="not visible" class="Logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="project.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="cricket.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$29.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="pexels-pixabay-358042.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$49.99</p>
+                    <button id="button1">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="pexels-rachel-xiao-253850-773063.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-grid">
+                <div class="category">
+                    <img src="football.jpg" alt="Football">
+                    <h3>Football</h3>
+                </div>
+                <div class="category">
+                    <img src="basketball.jpg" alt="Basketball">
+                    <h3>Basketball</h3>
+                </div>
+                <div class="category">
+                    <img src="Tennis.jpg" alt="Tennis">
+                    <h3>Tennis</h3>
+                </div>
+            </div>
+        </section>
+        <section class="promotions">
+            <h2>Special Offers</h2>
+            <div class="promotion-grid">
+                <div class="promotion">
+                    <img src="Football2.jpg" alt="Promotion 1">
+                    <h3>Discounts on Football Gear</h3>
+                    <p>Up to 50% off!</p>
+                </div>
+                <div class="promotion">
+                    <img src="basketball2.jpg" alt="Promotion 2">
+                    <h3>New Arrivals in Basketball</h3>
+                    <p>Check out the latest collection!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 SportsGear. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Logo {
+            width: 100px;
+            height: 50px;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 80px;
+            background: #E3E6F3;
+            box-shadow: 0 5px 15px rgba(0,0,blue,alpha);
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            #navbar li {
+                list-style: none;
+                padding: 0 20px;
+                position: relative;
+            }
+
+                #navbar li a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 600px;
+                    color: #1a1a1a;
+                }
+
+                    #navbar li a:hover,
+                    #navbar li a.active {
+                        color: #088178;
+                    }
+
+                        #navbar li a.active::after,
+                        #navbar li a:hover::after {
+                            content: "";
+                            width: 30%;
+                            height: 2px;
+                            background: #088178;
+                            position: absolute;
+                            bottom: -4px;
+                            left: 20px;
+                        }
+
+
+        .featured-products, .categories, .promotions {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-grid, .category-grid, .promotion-grid {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+            .product-grid button {
+                background-color: #088178;
+                padding: 5px;
+            }
+
+        .product, .category, .promotion {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 200px;
+        }
+
+            .product img, .category img, .promotion img {
+                width: 100%;
+                height: 200px;
+            }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+            footer .social-icons img {
+                width: 24px;
+                height: 24px;
+                margin: 0 10px;
+            }</style>
+
+</body>
+</html>
